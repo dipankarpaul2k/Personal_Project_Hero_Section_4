@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #191513;
+  position: relative;
+}
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+.logo img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  margin: 20px 0;
+
+  animation-name: logo-rotate;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: #999;
+  padding: 5px 2px;
+}
+.nav ul li a:hover {
+  color: #fff;
+  border-bottom: 3px solid #fff;
+}
+.content-row {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+.left-col,
+.right-col {
+  flex-basis: 50%;
+}
+.left-col {
+  padding: 50px 0px;
+}
+.search {
+  width: 250px;
+  padding: 8px 10px;
+  /* box-sizing: border-box; */
+  display: flex;
+  align-items: center;
+  border: 2px solid #4e3829;
+  border-radius: 25px;
+}
+.search img {
+  width: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.search input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #999;
+}
+.left-col hr {
+  width: 150px;
+  height: 3px;
+  background-color: #eea16d;
+  margin: 30px 0;
+  border: none;
+}
+.left-col h1 {
+  color: #fff;
+  font-size: 40px;
+  letter-spacing: 2px;
+}
+.left-col p {
+  color: #999;
+  margin: 30px 0;
+  font-size: 14px;
+  line-height: 22px;
+}
+.indicator {
+  display: flex;
+  align-items: center;
+}
+.indicator span {
+  width: 5px;
+  height: 5px;
+  border: 1px solid #eea16d;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.indicator .first {
+  background-color: #eea16d;
+}
+.right-col {
+  padding: 10px;
+}
+.right-col img {
+  width: 100%;
+}
+
+.social-links {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translate(0, -50%);
+}
+.social-links a {
+  display: block;
+  margin-top: 10px;
+}
